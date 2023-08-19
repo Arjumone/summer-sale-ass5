@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <section class="flex flex-col  lg:flex-row bg-[#F9F6E2] mb-4 lg:mb-10 max-w-screen-xl ">
+        <section class="flex flex-col  lg:flex-row bg-[#F9F6E2] max-w-screen-xl ">
             <!-- header left -->
             <div class=" flex-1 text-center mt-6 lg:mt-40">
                 <h3 class="font-medium">---SALE FEVER---</h3>
@@ -28,7 +28,7 @@
         <section class="flex max-w-screen-xl mx-8 lg:mx-20 gap-7 flex-col lg:flex-row">
             <!-- left side -->
             <div class="flex-1 ">
-                <div>
+                <div class="mt-4">
                     <h1 class="font-medium text-2xl mb-5">Kitchenware</h1>
                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <!-- card 1 -->
@@ -36,7 +36,7 @@
                     <figure class="px-10 pt-10">
                       <img src="./images/prod1.png" alt="Shoes" class="rounded-xl bg-slate-100 lg:px-14 lg:py-9" />
                     </figure>
-                    <div class="card-body items-center text-center">
+                    <div id="card-style-one" class="card-body items-center text-center">
                         <div class="rating justify-center">
                             <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
                             <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
@@ -204,16 +204,27 @@
                     <input class="bg-slate-100 rounded w-32 py-1" type="text">
                     <button class="bg-[#E527B2] text-white rounded py-1 px-4 ">Apply</button>
                 </div>
-                <div class="bg-white mt-4 pt-4 pb-8 px-4 ">
-                    <h3>Total Price:<span id="total-price">00</span></h3>
-                    <h3 class="my-2">Discount:<span id="discount-price">00</span></h3>
-                    <h3>Total:<span id="total">00</span></h3>
+                <div id="added-element" class="bg-white mt-4 pt-4 pb-8 px-4 ">
+                    <h3 id="total-title">Total Price:<span id="total-price">00</span></h3>
+                    <h2 class="my-2">Discount:<span id="discount-price">00</span></h2>
+                    <h4>Total:<span id="total">00</span></h4>
                 </div>
                 <div class=" ms-16 -mt-4">
-                    <button class="bg-[#E527B2] text-white rounded py-1 px-8">Make Purchase</button>
+                          <!-- Open the modal using ID.showModal() method -->
+                      <button class="btn bg-[#E527B2] text-white rounded py-1 px-8" onclick="my_modal_2.showModal()">Make Purchase</button>
+                      <dialog id="my_modal_2" class="modal text-center">
+                      <form method="dialog" class="modal-box">
+                      <img class="ms-36" src="./images/congo.png" alt="">
+                      <h3 class="font-bold text-3xl">Congratulations</h3>
+                      <p class="py-4">Your Purchase the product</p>
+                      <button id="go-home" class="bg-[#E527B2] text-white rounded py-1 px-8">Go Home</button>
+                      </form>
+                      </dialog>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/index.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 </html>
