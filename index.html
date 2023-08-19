@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer sale</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <section class="flex flex-col  lg:flex-row bg-[#F9F6E2] mb-4 lg:mb-10 max-w-screen-xl ">
+            <!-- header left -->
+            <div class=" flex-1 text-center mt-6 lg:mt-40">
+                <h3 class="font-medium">---SALE FEVER---</h3>
+                <h1 class=" text-2xl lg:text-4xl font-bold my-4">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
+                <label class="font-medium" for="">Use Promo Code</label>
+                <button id="header-btn" class="bg-[#E527B2] text-white px-4 py-2 rounded-lg">SELL200</button>
+            </div>
+            <!-- header right -->
+            <div class=" flex-1">
+                <img class=" w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]" src="./images/Summer1.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <main class="bg-slate-50">
+        <section class="flex max-w-screen-xl mx-8 lg:mx-20 gap-7 flex-col lg:flex-row">
+            <!-- left side -->
+            <div class="flex-1 ">
+                <div>
+                    <h1 class="font-medium text-2xl mb-5">Kitchenware</h1>
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- card 1 -->
+                 <div id="card-one" class="card bg-base-100  shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod1.png" alt="Shoes" class="rounded-xl bg-slate-100 lg:px-14 lg:py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">K. Accessories</h2>
+                      <p class=""><span id="card-price1">39.00</span> TK</p>
+                    </div>
+                  </div>
+                  <!-- card-2 -->
+                 <div id="card-two" class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod2.png" alt="Shoes" class="rounded-xl bg-slate-100 lg:px-14 lg:py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">K. Accessories</h2>
+                      <p class=""><span id="card-price2">25.00</span> TK</p>
+                    </div>
+                  </div>
+                  <!-- card 3 -->
+                 <div id="card-three" class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod3.png" alt="Shoes" class="rounded-xl  bg-slate-100 lg:px-14 lg:py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">Home Cooker</h2>
+                      <p class=""><span id="card-price3">49.00</span> TK</p>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="my-7">
+                    <h1 class="font-medium text-2xl mb-5">Sportswear</h1>
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- card 4 -->
+                 <div id="card-four" class="card bg-base-100  shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod4.png" alt="Shoes" class="rounded-xl bg-slate-100 lg:px-14 lg:py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">Sports Back Cap</h2>
+                      <p class=""><span id="card-price4">69.00</span> TK</p>
+                    </div>
+                  </div>
+                  <!-- card-5 -->
+                 <div id="card-five" class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod5.png" alt="Shoes" class="rounded-xl  bg-slate-100 lg:px-14 lg:py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">Full Jersey Set</h2>
+                      <p class=""><span id="card-price5">69.00</span> TK</p>
+                    </div>
+                  </div>
+                  <!-- card 6 -->
+                 <div id="card-six" class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod6.png" alt="Shoes" class="rounded-xl bg-slate-100 lg:px-14 lg:py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">Sports cates</h2>
+                      <p class=""><span id="card-price6">159.00</span> TK</p>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+                <!-- <div>
+                    <h1 class="font-medium text-2xl">Furniture</h1>
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  
+                 <div id="card-seven" class="card bg-base-100  shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod7.png" alt="Shoes" class="rounded-xl bg-slate-100 px-14 py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">K. Accessories</h2>
+                      <p class=""><span id="card-price7">39.00</span> TK</p>
+                    </div>
+                  </div>
+                 
+                 <div id="card-eight" class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod8.png" alt="Shoes" class="rounded-xl  bg-slate-100 px-14 py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">K. Accessories</h2>
+                      <p class=""><span id="card-price8">39.00</span> TK</p>
+                    </div>
+                  </div>
+                  
+                 <div id="card-nine" class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/prod9.png" alt="Shoes" class="rounded-xl  bg-slate-100 px-14 py-9" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" checked/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-yellow-300"/>
+                        </div>
+                      <h2 class="card-title">K. Accessories</h2>
+                      <p class=""><span id="card-price9">39.00</span> TK</p>
+                    </div>
+                  </div>
+                 </div>
+                </div> -->
+            </div>
+            <!-- right side -->
+            <div class="w-[300px] mt-4 lg:mt-14 font-medium">
+                <div class="bg-white p-5 rounded-lg">
+                    <h3 class="mb-2">Have coupon?</h3>
+                    <input class="bg-slate-100 rounded w-32 py-1" type="text">
+                    <button class="bg-[#E527B2] text-white rounded py-1 px-4 ">Apply</button>
+                </div>
+                <div class="bg-white mt-4 pt-4 pb-8 px-4 ">
+                    <h3>Total Price:<span id="total-price">00</span></h3>
+                    <h3 class="my-2">Discount:<span id="discount-price">00</span></h3>
+                    <h3>Total:<span id="total">00</span></h3>
+                </div>
+                <div class=" ms-16 -mt-4">
+                    <button class="bg-[#E527B2] text-white rounded py-1 px-8">Make Purchase</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
