@@ -1,30 +1,28 @@
-
-let total = 0
-document.getElementById('card-one').addEventListener('click',function(){
-    const cardOne = document.getElementById('card-style-one');
-    const cardStyleOne = cardOne.childNodes[3].innerText;
+let totalOne = 0;  
+function handleClickCard(target){
+    const addedContainer = document.getElementById('element-added');
+    const itemName = target.childNodes[3].childNodes[3].innerText;
+    const count = addedContainer.childElementCount
     const h1 = document.createElement('h1');
-    h1.innerText = cardStyleOne;
-    const h3 = document.getElementById('total-title');
-    const addedElement = document.getElementById('added-element');
-    addedElement.insertBefore(h1,h3);
-    const cardStyleOnePrice = cardOne.childNodes[4];
-     const totalOne = total + cardStyleOnePrice;
-     document.getElementById('total-price').innerText= totalOne
-})
+    h1.innerHTML=`${count+1}. ${itemName}`
+    addedContainer.appendChild(h1);
+    const prices = target.childNodes[3].childNodes[5].innerText.split(' ')[0];
+    totalOne = totalOne + parseFloat(prices);
+     const totalPrice = document.getElementById('total-price').innerText= totalOne;  
+
+     const makeBtn = document.getElementById('make-purchase');
+     console.log(makeBtn);
+    if(totalPrice>199){
+        makeBtn.removeAttribute('disabled');
+    }
+    else{
+        makeBtn.setAttribute('disabled',true)
+    }
+}
+    
 
 
 
-
-// let priceThreeTotal = 0
-// document.getElementById('btn-three').addEventListener('click',function(){
-//     const priceElementThree = elementField('price-three')
-//     priceThreeTotal = priceThreeTotal + priceElementThree;
-//      const totalPriceThree = document.getElementById('total').innerText = priceOneTotal + priceTwoTotal + priceThreeTotal;
-//      const discountElementText = elementField('discount')
-//     document.getElementById('grand-total').innerText = totalPriceThree *discountElementText / 100
-// }); 
-// modal part done
 document.getElementById('go-home').addEventListener('click',function(){
-    window.location.href ='index.html';
+    window.location.href ='index.html'; 
 })

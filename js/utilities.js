@@ -1,18 +1,19 @@
+
 function inputField(inputId){
-    const inputFieldId = document.getElementById(inputId);
-    const inputFieldValueString = inputFieldId.value;
-    const inputFieldValue = parseFloat(inputFieldValueString);
-    inputFieldId.value= '';
-    return inputFieldValue;
+    const inputField = document.getElementById(inputId);
+    const inputValueString = inputField.value;
+    const inputValue = parseFloat(inputValueString);
+    inputField.value = '';
+    return inputValue;
 }
 function elementField(elementId){
-    const element = document.getElementById(elementId);
-    const elementValueString = element.innerText;
-    const elementValue = parseFloat(elementValueString);
-    return elementValue;
+    const elementField = document.getElementById(elementId);
+    const elementTextString = elementField.innerText;
+    const elementInnerText = parseFloat(elementTextString);
+    return elementInnerText;
 }
+function setBtn(btnId,newValue){
+    const btnElement = document.getElementById(btnId);
+    btnElement.innerText = newValue;
 
-function setElementValue(elementId,newValue){
-    const textElement = document.getElementById(elementId);
-    textElement.innerText = newValue;
 }
