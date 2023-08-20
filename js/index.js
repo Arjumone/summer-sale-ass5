@@ -27,8 +27,9 @@ function handleClickCard(target){
         document.getElementById('apply').addEventListener('click',function(){
             const inputField = elementField('input-btn');
             const discount = document.getElementById('discount-price').innerText=totalPrice *20 /100;
+            const total = document.getElementById('total').innerText=totalPrice-discount;
         });
-        const total = document.getElementById('total');
+        
 
         console.log('gff');  
 }
