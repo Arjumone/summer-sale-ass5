@@ -146,8 +146,8 @@
             <div class="w-[300px] mt-4 lg:mt-14 font-medium">
                 <div class="bg-white p-5 rounded-lg">
                     <h3 class="mb-2">Have coupon?</h3>
-                    <input class="bg-slate-100 rounded w-32 py-2" type="text">
-                    <button disabled class="btn bg-[#E527B2] text-white rounded py-0 px-4 " >Apply</button>
+                    <input id="input-btn" class="bg-slate-100 rounded w-32 py-2" type="text">
+                    <button id="apply" disabled class="btn bg-[#E527B2] text-white rounded py-0 px-4 " >Apply</button>
                 </div>
                <div id="added-container" class="bg-white mt-4 pt-4 pb-8 px-4 ">
                 <div id="element-added">
@@ -157,7 +157,7 @@
                     <h2 class="my-2">Discount:<span id="discount-price">00</span></h2>
                     <h4>Total:<span id="total">00</span></h4>
                 </div>
-                <div class=" ms-16 -mt-4">
+                <div class=" ms-16 -mt-6 mb-6">
                           <!-- Open the modal using ID.showModal() method -->
                       <button id="make-purchase" class="btn bg-[#E527B2] text-white rounded py-1 px-8" disabled onclick="my_modal_2.showModal()">Make Purchase</button>
                       <dialog id="my_modal_2" class="modal text-center">
