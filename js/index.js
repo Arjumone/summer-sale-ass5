@@ -28,17 +28,18 @@ function handleClickCard(target){
             const inputField = elementField('input-btn');
             const discount = document.getElementById('discount-price').innerText=totalPrice *20 /100;
             const total = document.getElementById('total').innerText=totalPrice-discount;
-        });
-        
-
-        console.log('gff');  
+        }); 
+        document.getElementById('input-btn').addEventListener('keyup',function(event){
+            const inputText = event.target.value;
+            const applyBtn = document.getElementById('apply');
+            if(inputText === 'SELL200'){
+                applyBtn.removeAttribute('disabled')
+            }
+            else{
+                applyBtn.setAttribute('disabled',true)
+            }
+        })
 }
-
-
-    
-
-
-
 document.getElementById('go-home').addEventListener('click',function(){
     window.location.href ='index.html'; 
 })
