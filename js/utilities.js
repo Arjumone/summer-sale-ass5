@@ -12,8 +12,3 @@ function elementField(elementId){
     const elementInnerText = parseFloat(elementTextString);
     return elementInnerText;
 }
-function setBtn(btnId,newValue){
-    const btnElement = document.getElementById(btnId);
-    btnElement.innerText = newValue;
-
-}
