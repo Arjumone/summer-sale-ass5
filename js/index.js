@@ -10,7 +10,6 @@ function handleClickCard(target){
     totalOne = totalOne + parseFloat(prices);
      const totalPrice = document.getElementById('total-price').innerText= totalOne;  
      const makeBtn = document.getElementById('make-purchase');
-    //  console.log(makeBtn);
     if(totalPrice>0){
         makeBtn.removeAttribute('disabled');
     }
@@ -18,27 +17,30 @@ function handleClickCard(target){
         makeBtn.setAttribute('disabled',true)
     };
     const applyBtn = document.getElementById('apply');
-        if(totalPrice>199){
-            applyBtn.removeAttribute('disabled');
-        }
-        else{
-            applyBtn.setAttribute('disabled',true)
-        }
-        document.getElementById('apply').addEventListener('click',function(){
-            const inputField = elementField('input-btn');
-            const discount = document.getElementById('discount-price').innerText=totalPrice *20 /100;
-            const total = document.getElementById('total').innerText=totalPrice-discount;
-        }); 
+    if(totalPrice>199){
+        applyBtn.removeAttribute('disabled');
+    }
+    else{
+        applyBtn.setAttribute('disabled',true)
+    }
+        
         document.getElementById('input-btn').addEventListener('keyup',function(event){
             const inputText = event.target.value;
-            const applyBtn = document.getElementById('apply');
             if(inputText === 'SELL200'){
                 applyBtn.removeAttribute('disabled')
+                document.getElementById('apply').addEventListener('click',function(){
+                    const discount = document.getElementById('discount-price').innerText=totalPrice *20 /100;
+                    const discountElement = document.getElementById('discount-price');
+                    discountElement.innerText = discount.toFixed(2)
+                    const total = document.getElementById('total').innerText=totalPrice-discount;
+                    const totalElement = document.getElementById('total');
+                    totalElement.innerText=total.toFixed(2);
+                });   
             }
             else{
                 applyBtn.setAttribute('disabled',true)
             }
-        })
+        }) 
 }
 document.getElementById('go-home').addEventListener('click',function(){
     window.location.href ='index.html'; 
